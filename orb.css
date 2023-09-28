@@ -1,0 +1,183 @@
+::selection {
+  background: purple;
+  color: #ed3;
+}
+
+::selection {
+  background: rgb(180, 90, 240);
+  color: rgb(30, 30, 20);
+}
+
+:any-link {
+  color: inherit;
+}
+
+.slime {
+  background: rgb(180, 90, 240);
+  color: rgb(30, 30, 20);
+}
+
+.slime ::selection {
+  background: rgb(30, 30, 20);
+  color: #ed3;
+}
+
+:enabled {
+  border-radius: 50%;
+}
+
+:focus-within {
+  filter: saturation(100%);
+}
+
+:focus {
+  border-radius: 50% 50% 0 50%;
+  box-shadow: 0 0 0 1ch;
+  outline: thick dotted;
+}
+
+* { box-sizing: border-box }
+header * { font: unset }
+h1 { font: 1.618em sans-serif; margin: 0; float: left }
+h2 { font: 1.382em sans-serif; margin: 0 }
+
+html {
+  color: #313;
+  background: #ed3;
+  font-family: sans-serif;
+  font-size: max(3ch, 3vh + 1vmin);
+}
+
+header {
+  align-self: center;
+  border-radius: 0% 0% 50% 50%;
+  display: flow-root;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+
+
+body {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+form {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+}
+
+label {
+  font-size: 1.382em;
+}
+
+.rabid {
+  display: flex;
+  flex-basis: calc(100% / 3);
+}
+
+input {
+  padding: 1ch;
+  font: 1rem sans-serif;
+  display: inline-flex;
+}
+
+[max="59"] {
+  max-width: 0;
+  min-width: 3.6rem;
+}
+
+[max="1080"] {
+  max-width: 0;
+  min-width: 5.2rem;
+}
+
+[type="radio"] {
+  display: flex;
+}
+
+kbd { 
+  display: inline-flex;
+  font: 1.618em sans-serif; 
+}
+
+section { 
+  margin: 1em auto 2em;
+  float: left;
+}
+
+select {
+  display: inline-flex;
+  padding: .6ch;
+  font: inherit;
+  color: #0e0e0e;
+  margin-inline-start: 1em;
+  min-width: 5em;
+  background: #ed3;
+}
+
+ul { margin: 1ch 0 }
+li { display: flex }
+
+fieldset {
+  border: none;
+  margin-bottom: 1em;
+}
+
+legend {
+  align-self: center;
+  font-size: 1.382em;
+}
+
+option {
+  background: turquoise;
+}
+
+button {
+  align-self: center;
+  background: #318;
+  border: 1ch groove turquoise;
+  color: #bae4ea;
+  font: bold 1.618em sans-serif;
+  display: none;
+  margin: auto;
+  padding: 1em;
+}
+
+::marker {
+/*   content: "△"; */
+}
+
+dt + dd {
+  font-weight: bold;
+}
+
+dl {
+  max-width: 20em;
+  display: flow-root;
+  flex-flow: column;
+}
+
+dt {
+  clear: both;
+  float: none;
+}
+
+dd {
+  float: none;
+}
+
+.wrap { flex-wrap: wrap }
+.warp { flex-wrap: wrap-reverse }
+.flix { display: inline-flex }
+.flex { display: flex }
+[hidden] { display: none }
