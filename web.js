@@ -28,13 +28,28 @@
   // var points = "t0 t1 t2 q0 q1 q2 q3 q4 s0 s1 s2 s3 s4 s5 s6".split(" ")
   var points = orb.met
   
+  function cupid(ev) {  
+    console.log("💘")
+    var eee = form.eee
+    var up = 38 
+    var dn = 40
+    var ky = ev.code
+    var tt = ev.target
+    var va = tt.value
+    console.log(ky, va)
+    switch (ky) {
+      case up: tt.max == va && eee.value++
+      case dn: tt.min == va && eee.value-- 
+    }
+    console.log(eee.value)
+  }
   
-  function calc() {
+  function calc(e) {
 
     var i = points.length
     var d = form.eee.value
     var m = form.iue.value
-    
+        
     function output(name) {
       var e = form[name]
       var f = orb[name]
@@ -50,9 +65,7 @@
       if (!f || !e) continue
       e.textContent = orb.text(f(d, m))
     }
-    
-
-    
+     
     // deets.innerHTML = orb.septiles(d, m).map(orb.text).join("<br>")
     // orb().pisces(0).aquarius(21).fyi()
     
@@ -60,7 +73,8 @@
   }
 
   calc()
-
+  
+  form.iue.onkeyup = cupid
   form.oninput = calc
   form.onchange = calc
   form.onsubmit = calc

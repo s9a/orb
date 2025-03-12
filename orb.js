@@ -181,19 +181,58 @@
   function point(name) {
     points.push(name)
   }
+  
+  var deg = /\d+/g
+  var deg = /\º?/g
 
-  orb.aries = animal(1)
-  orb.taurus = animal(2)
-  orb.gemini = animal(3)
-  orb.cancer = animal(4)
-  orb.leo = animal(5)
-  orb.virgo = animal(6)
-  orb.libra = animal(7)
-  orb.scorpio = animal(8)
-  orb.sage = animal(9)
-  orb.corn = animal(10)
-  orb.aqua = animal(11)
-  orb.pisces = animal(12)
+  fling.prototype = []
+  function fling(bling) {
+    
+  }
+  
+  function fissure(fins) {
+    var di = fins.indexOf("º")
+    var dn = fins.slice(0, di)
+    dn = +dn
+    if (dn != dn) return []
+    
+  }
+  
+  function mop(ing) {
+    
+  }
+  
+  
+  var lace = "".replace
+  var like = /\s/g
+  
+  function sane(sing) {
+    return lace.call(sing, like, "")
+  }
+ 
+    
+  function abc(s) {
+    s = s.replace(/\s/g, "")
+    var y = s.split(/\D\S/)
+    
+    return y.map(Number).filter(isFinite)
+    
+    
+    var y = s.split("º")
+    var a = s.indexOf("º")
+    var y = s.split("º")
+    var cull = +s.shift()
+    var pull = +s.
+    
+    var a = s.indexOf("’", o)
+    var A = s.indexOf("'", o)
+    var d = 
+  }
+  
+  var match = "".match
+  var slice = [].slice
+
+        
   orb.sign = sign
   orb.hoca = hoca
   orb.arc = arc
@@ -255,7 +294,7 @@
     }
   }
 
-  $.$ = pof(1, 1)
+  $.$ = pof(1, 1)     
   $.$_ = pof(2, 1)
   $._$ = pof(2, 2)
   $.$__ = pof(3, 1)
