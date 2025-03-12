@@ -46,6 +46,13 @@
     var h = 120
     return [u, u+h, u-h]
   }
+  
+  // includes trines:
+  function noviles(d, m, s) {
+    var u = num(d, m, s)
+    var h = 40
+    return [u, u+h, u-h]
+  }
 
   function quintiles(d, m, s) {
     var u = num(d, m, s)
